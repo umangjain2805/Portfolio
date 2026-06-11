@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
-import GlassCard from "../components/GlassCard";
 import { FaCode, FaRocket, FaReact } from "react-icons/fa";
+import profileImg from "../assets/profile.png";
 
 const Hero = () => {
   return (
@@ -52,19 +52,13 @@ const Hero = () => {
           {/* Glowing Background Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/20 blur-[100px] rounded-full"></div>
           
-          <GlassCard className="relative w-full max-w-[400px] h-[450px] overflow-hidden flex items-center justify-center border-white/60" hover={false}>
-             <div className="text-8xl text-accent/20 font-bold select-none italic">
-                UJ
-             </div>
-             {/* Placeholder for Profile - You can set an <img> tag here */}
-             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-white/10">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-accent to-mint mb-4 flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-accent/20 border-4 border-white/50">
-                  UJ
-                </div>
-                <h3 className="text-xl font-bold text-primary">Umang Jain</h3>
-                <p className="text-sm text-secondary italic">SGSITS IT Student</p>
-             </div>
-          </GlassCard>
+          <div className="relative w-full max-w-[550px] h-[550px] overflow-hidden flex items-start justify-center">
+            <img
+              src={profileImg}
+              alt="Umang Jain"
+              className="w-full h-full object-cover object-top mix-blend-multiply drop-shadow-2xl"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
