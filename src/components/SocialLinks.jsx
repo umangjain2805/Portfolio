@@ -1,12 +1,11 @@
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const SocialLinks = () => {
   const socials = [
-    { icon: FaLinkedin, href: "https://linkedin.com/in/umangjain2805", color: "hover:text-blue-600" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/in/umang-jain-1647a6335/", color: "hover:text-blue-600" },
     { icon: FaGithub, href: "https://github.com/umangjain2805", color: "hover:text-black" },
     { icon: FaEnvelope, href: "mailto:umangjain2805@gmail.com", color: "hover:text-red-500" },
-    { icon: FaPhone, href: "tel:+91XXXXXXXXXX", color: "hover:text-green-500" },
   ];
 
   return (
