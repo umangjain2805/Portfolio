@@ -3,7 +3,7 @@ import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
-import Education from "./sections/Education";
+import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -32,10 +32,10 @@ function App() {
         {/* Simple Spacer/Divider */}
         <div className="h-px bg-gradient-to-r from-transparent via-white/40 to-transparent my-10"></div>
         
+        <About />
         <Skills />
         <Projects />
         <Experience />
-        <Education />
         <Contact />
       </main>
 
