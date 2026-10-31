@@ -1,0 +1,26 @@
+You are a senior front-end engineer and creative developer. Build a complete, production-ready portfolio website by following the file UI.md in this folder. Read the whole file before writing any code.
+
+RULES
+1. UI.md is the single source of truth for content, design, motion, tech stack, file structure and the acceptance checklist. Follow it exactly. Do not invent content, links, dates, stats, screenshots or claims. Where UI.md says to leave a placeholder or slot, leave it.
+2. Do not copy any reference site's name, logo, copy or imagery. Take only the design ideas described in UI.md.
+3. Use the stack in UI.md: Next.js (App Router) + TypeScript + Tailwind CSS, GSAP ScrollTrigger + Lenis, Three.js / react-three-fiber for the particle sphere, fonts via next/font. Keep all copy in /data/content.ts.
+4. Ask me questions only for items under "Open questions" that block you. Otherwise make a sensible choice, note it, and continue.
+
+HOW TO WORK
+Step 1: Write a short plan (sections, components, dependencies). Then start building without waiting for approval.
+Step 2: Scaffold the project, install dependencies, set up design tokens, fonts, global layout, header, Roman-numeral section index, scroll progress and preloader.
+Step 3: Build the hero with the particle sphere first. Make it work with reduced-motion and no-WebGL fallbacks, and keep the text readable before the 3D loads.
+Step 4: Build the remaining sections in order: About, Experience, Work (horizontal project strip + details modal), Skills, Problem Solving/Education/Leadership, Contact + Footer.
+Step 5: Add motion (blur-to-sharp reveals, scroll-linked text, theme wipes, count-ups) exactly as specified, and keep it performant.
+Step 6: Make it responsive at 360, 390, 768, 1024, 1440 and 1920 px, with no horizontal scroll.
+Step 7: Run lint, type-check and a production build, and fix every error. Run the dev server and check the page visually if you can (screenshots at desktop and mobile widths). Check SEO metadata, accessibility (keyboard, focus, aria) and Lighthouse targets.
+Step 8: Go through the acceptance checklist at the end of UI.md item by item and fix anything that fails.
+
+DONE WHEN
+The site builds with zero errors, matches UI.md, and every item in the acceptance checklist passes.
+
+FINAL REPORT (short)
+- How to run it (install, dev, build commands)
+- What you built
+- Any placeholders left (resume.pdf, screenshots, project links)
+- Anything in UI.md you could not do, and why
