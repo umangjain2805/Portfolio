@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
-import { ArrowUpRight, Copy, Check } from "lucide-react";
+import { ArrowUpRight, Copy, Check, Mail, Phone } from "lucide-react";
 import { content as c } from "@/data/content";
 import Eyebrow from "../ui/Eyebrow";
 import RevealText from "../ui/RevealText";
@@ -58,11 +58,16 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-links">
-            <span className="mono contact-email-label">Email</span>
             <div className="contact-email-row">
-              <a className="email-link" href={`mailto:${c.email}`}>
-                {c.email}
-              </a>
+              <span className="contact-detail-icon" aria-hidden="true">
+                <Mail size={20} />
+              </span>
+              <div className="contact-detail-text">
+                <span className="mono contact-email-label">Email me</span>
+                <a className="email-link" href={`mailto:${c.email}`}>
+                  {c.email}
+                </a>
+              </div>
               <button
                 className="icon-button copy-button"
                 type="button"
@@ -76,22 +81,27 @@ export default function Contact() {
                   <Copy size={18} />
                 )}
               </button>
+              <span
+                id="contact-copy-status"
+                className="contact-copy-status mono"
+                role="status"
+                aria-atomic="true"
+              >
+                {message}
+              </span>
             </div>
-            <span
-              id="contact-copy-status"
-              className="contact-copy-status mono"
-              role="status"
-              aria-atomic="true"
-            >
-              {message}
-            </span>
-            <div className="contact-phone">
-              <span className="mono contact-email-label">Phone</span>
-              <a className="phone-link" href="tel:9238170205">
-                92381 70205
-                <ArrowUpRight size={20} aria-hidden="true" />
-              </a>
-            </div>
+            <a className="contact-phone phone-link" href="tel:9238170205">
+              <span className="contact-detail-icon" aria-hidden="true">
+                <Phone size={20} />
+              </span>
+              <span className="contact-detail-text">
+                <span className="mono contact-email-label">Call me</span>
+                <span className="contact-phone-number">92381 70205</span>
+              </span>
+              <span className="contact-call-action" aria-hidden="true">
+                <ArrowUpRight size={20} />
+              </span>
+            </a>
           </div>
         </div>
         <div className="contact-social-row">

@@ -14,6 +14,7 @@
 #home .eyebrow {
   margin-bottom: 28px;
   width: fit-content;
+  font-size: clamp(18px, 1.6vw, 24px);
 }
 #home .hero-title {
   font-size: clamp(40px, 4.3vw, 68px);

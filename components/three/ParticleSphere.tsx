@@ -10,13 +10,14 @@ export function DottedSphere() {
         const radius = Math.sqrt(1 - y * y);
         const theta = i * 2.399963;
         const z = Math.sin(theta) * radius;
+        // Normalize floating-point differences between server and browser math.
         return (
           <circle
             key={i}
-            cx={300 + Math.cos(theta) * radius * 245}
-            cy={300 + y * 245}
+            cx={(300 + Math.cos(theta) * radius * 245).toFixed(6)}
+            cy={(300 + y * 245).toFixed(6)}
             r={z > 0 ? 1.45 : 0.8}
-            opacity={0.18 + (z + 1) * 0.3}
+            opacity={(0.18 + (z + 1) * 0.3).toFixed(6)}
           />
         );
       })}
